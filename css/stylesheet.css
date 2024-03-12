@@ -1,0 +1,109 @@
+body {
+    margin: 0px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr;
+    grid-template-rows: 60px 50vh 50vh 40vh 80px;
+    grid-template-areas: 
+        "he he he"
+        "mn mn mn"
+        "sc1 sc1 sc1"
+        "sc2 sc2 sc2"
+        "ft ft ft"
+}
+
+header{
+    grid-area: he;
+    background-color:#5B618A;
+    position: relative;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 1px 4px 4px rgb(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    z-index: 2;
+}
+
+.menu {
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logo {
+width: auto;
+height: 90px;
+margin-top: -15.5px;
+}
+
+main{
+    grid-area: mn;
+    background-image: url(/24wuab/img/kevin-bhagat-3cLpiv8h5so-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 1px 4px 4px rgb(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.car{
+    height: 200px;
+    width: auto;
+    padding: 10px;
+}   
+
+#car1 {
+    height: 240px;
+    width: auto;
+
+}
+
+.arrows {
+    height: 30px;
+    width: auto;
+    margin-top: 140px;
+}
+
+.car_section{
+    grid-area: sc1;
+    background-color: #1E2019;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px #92B6B1;
+    
+}
+
+.more_button {
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #92B6B1;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.more_button:hover {
+    background-color: #57706d;
+}
+
+
+.about_section{
+    grid-area: sc2;
+    background-color: #1E2019;
+}
+
+footer{
+    grid-area: ft;
+    background-color: #92B6B1;
+}
