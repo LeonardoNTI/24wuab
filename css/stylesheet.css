@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
     margin: 0px;
 }
 
 body::-webkit-scrollbar {
     display: none;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
 }
 
 #wrapper{
     display: grid;
     grid-template-columns: 1fr 40% 1fr;
-    grid-template-rows: 60px 50vh 50vh 40vh 80px;
+    grid-template-rows: 60px 50vh 50vh 60vh auto;
     grid-template-areas: 
         "he he he"
         "mn mn mn"
@@ -45,11 +49,30 @@ margin-top: -15.5px;
 
 main{
     grid-area: mn;
+    position: relative;
     background-image: url(/24wuab/img/kevin-bhagat-3cLpiv8h5so-unsplash\ \(1\).jpg);
     background-size: cover;
     background-position: center;
     box-shadow: 0px 1px 4px 4px rgb(0, 0, 0, 0.7);
     z-index: 1;
+}
+
+.search{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 500px;
+    height: 2.3rem;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 4px black;
+    top: 47.5vh;
+    left: 460px;
+}
+
+.search p{
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.685);
 }
 
 .car{
@@ -76,6 +99,7 @@ main{
     display: flex;
     justify-content: space-between;
     border-bottom: solid 2px #92B6B1;
+    border-top: solid 5px #92B6B1;
     
 }
 
@@ -97,13 +121,84 @@ main{
     background-color: #57706d;
 }
 
+#about_us_container{
+    width: 40rem;
+}
 
 .about_section{
     grid-area: sc2;
     background-color: #1E2019;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    gap: 0px;
 }
+
+.about_section img {
+    width: auto;
+    height: 22rem;
+    margin: 30px;
+    border: solid 1px #92B6B1;
+    border-radius: 6px;
+}
+
+
 
 footer{
     grid-area: ft;
+    height: auto;
     background-color: #92B6B1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+}
+
+.footer-content{
+    margin: 10px;
+}
+
+.social-media{
+    display: flex;
+    padding-left: 0px;
+    justify-content: space-between;
+    width: 350px;
+}
+
+#follow-us{
+    display: flex;
+    justify-content: center;
+}
+
+#footer-content-links{
+    padding-right: 100px;
+}
+
+#footer-content-links li {
+    margin: 10px;
+    margin-left: -15px;
+}
+
+#links{
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+    flex-wrap: wrap;
+}
+
+#footer-content-links a {
+    text-decoration:none ;
+    color: black;
+
+}
+
+#footer-content-links a:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.social-media img{
+    height: 30px;
+    width: auto;
+    margin-top: 25px;
 }
