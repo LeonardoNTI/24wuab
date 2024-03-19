@@ -13,7 +13,7 @@ body::-webkit-scrollbar {
 #wrapper{
     display: grid;
     grid-template-columns: 1fr 40% 1fr;
-    grid-template-rows: 60px 50vh 50vh 60vh auto;
+    grid-template-rows: 60px 42vh 50vh 60vh auto;
     grid-template-areas: 
         "he he he"
         "mn mn mn"
@@ -99,14 +99,14 @@ main{
     background-color: #1E2019;
     display: flex;
     justify-content: space-between;
-    border-bottom: solid 2px #92B6B1;
+    border-bottom: solid 5px #92B6B1;
     border-top: solid 5px #92B6B1;
     
 }
 
 .more_button {
     position: absolute;
-    bottom: -24px;
+    bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 20px;
@@ -128,10 +128,10 @@ main{
 
 .about_section{
     grid-area: sc2;
-    background-color: #1E2019;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-around;
-    color: white;
+    color: rgb(0, 0, 0);
     gap: 0px;
     font-family: 'Montserrat', sans-serif;
 }
