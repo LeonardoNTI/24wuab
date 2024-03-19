@@ -42,15 +42,15 @@ header{
 }
 
 .logo {
-width: auto;
-height: 90px;
-margin-top: -15.5px;
+    width: auto;
+    height: 90px;
+    margin-top: -15.5px;
 }
 
 main{
     grid-area: mn;
     position: relative;
-    background-image: url(/24wuab/img/kevin-bhagat-3cLpiv8h5so-unsplash\ \(1\).jpg);
+    background-image: url(/img/kevin-bhagat-3cLpiv8h5so-unsplash\ \(1\).jpg);
     background-size: cover;
     background-position: center;
     box-shadow: 0px 1px 4px 4px rgb(0, 0, 0, 0.7);
@@ -65,9 +65,10 @@ main{
     width: 500px;
     height: 2.3rem;
     border-radius: 10px;
-    box-shadow: 0px 1px 4px 4px black;
+    box-shadow: 0px 1px 7px 2px black;
     top: 47.5vh;
     left: 460px;
+    font-family: 'Montserrat',sans-serif;
 }
 
 .search p{
@@ -132,6 +133,7 @@ main{
     justify-content: space-around;
     color: white;
     gap: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about_section img {
@@ -141,8 +143,6 @@ main{
     border: solid 1px #92B6B1;
     border-radius: 6px;
 }
-
-
 
 footer{
     grid-area: ft;
