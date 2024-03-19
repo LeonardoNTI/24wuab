@@ -12,13 +12,12 @@ body::-webkit-scrollbar {
 
 #wrapper{
     display: grid;
-    grid-template-columns: 20% 1fr 1fr 1fr;
-    grid-template-rows: 60px 91.5vh auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px 80vh auto;
     grid-template-areas: 
-    'he he he he'
-    'as sc sc sc'
-    'ft ft ft ft'
-    ;
+    'he he'
+    'sc sc'
+    'ft ft'
 }
 
 header{
@@ -108,80 +107,31 @@ header{
     margin-top: -15.5px;
 }
 
+
 section{
     grid-area: sc;
-    background-color: #1E2019;
+    background-color: #5B618A;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    color:white;
+    padding: 200px;
 }
 
-.pages{
-    font-size: 19px;
-}
-
-.car{
-    height: 250px;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(231, 231, 231);
-    border-radius: 20px;
-    color: black;
-}
-
-.car img{
-    filter: brightness(150%);
-}
-
-.car h1{
-    margin-bottom: 0px;
-}
-
-.car p {
-    margin-top: 4px;
-}
-
-.container {
+.container{
+    width: 100rem;
+    height: 40rem;
+    border: solid 1px red;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
     flex-wrap: wrap;
-    margin: 30px;
+    gap: 20px;
+    padding-left: 35px;
 }
 
-aside{
-    grid-area: as;
-    background-color: #484d69;
-    padding-top: 30px;
-    box-shadow: 3px 0px 5px 4px rgb(0, 0, 0, 0.4);
-}
-
-.filter{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 60px;
-    margin-left: 10px;
-}
-
-.filter a{
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    padding-left: 30px;
-}
-
-.link {
-    transition: border 0.2s ease-in-out;
-    border-left: solid 0px transparent;
-}
-
-.link:hover{
-    border-left: solid 10px #92B6B1;
+.list-item{
+    border: solid 1px red;
+    height: 50px;
+    width: 40rem;
+    margin-top: -100px;
 }
 
 footer{
@@ -242,5 +192,3 @@ footer{
     width: auto;
     margin-top: 25px;
 }
-
-
