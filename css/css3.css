@@ -114,6 +114,7 @@ section{
     display: flex;
     align-items: center;
     padding: 200px;
+    justify-content: center;
 }
 
 .container{
@@ -125,6 +126,7 @@ section{
     flex-wrap: wrap;
     gap: 20px;
     padding-left: 35px;
+    justify-content: center;
 }
 
 .list-item{
