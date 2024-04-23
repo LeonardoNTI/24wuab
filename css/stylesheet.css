@@ -13,7 +13,7 @@ body::-webkit-scrollbar {
 #wrapper{
     display: grid;
     grid-template-columns: 1fr 40% 1fr;
-    grid-template-rows: 60px 42vh 50vh 60vh auto;
+    grid-template-rows: 60px 55vh 55vh auto auto;
     grid-template-areas: 
         "he he he"
         "mn mn mn"
@@ -33,6 +33,10 @@ header{
     justify-content: space-between;
     padding-right: 50px;
     z-index: 3;
+}
+
+header #motor_logo{
+    display: none;
 }
 
 .hamburger{
@@ -128,8 +132,8 @@ main{
     height: 2.3rem;
     border-radius: 10px;
     box-shadow: 0px 1px 7px 2px black;
-    top: 40vh;
-    left: 460px;
+    top: 52vh;
+    left: 400px;
     font-family: 'Montserrat',sans-serif;
 }
 
@@ -164,15 +168,14 @@ main{
     grid-area: sc1;
     background-color: #1E2019;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border-bottom: solid 5px #92B6B1;
     border-top: solid 5px #92B6B1;
-    
 }
 
 .more_button {
     position: absolute;
-    bottom: 24px;
+    bottom: -100px;
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 20px;
@@ -277,7 +280,7 @@ footer{
 #card_wrapper{
     display: grid;
     grid-template-columns: 20% 1fr 1fr 1fr;
-    grid-template-rows: 60px 97vh auto;
+    grid-template-rows: 60px 110vh auto;
     grid-template-areas: 
     'he he he he'
     'as sc sc sc'
@@ -385,7 +388,7 @@ a{
 
 #services_section{
     grid-area: sc;
-    background-color: #5B618A;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     padding: 100px;
@@ -393,27 +396,29 @@ a{
 }
 
 .services_container{
-    width: 200rem;
+    width: 500rem;
     height: 30rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 50px;
     padding-left: 35px;
     justify-content: center;
     padding-right: 40px;
 }
 
 .list-item{
-    height: 80px;
-    width: 30rem;
-    margin-top: -100px;
+    height: 100px;
+    width: 28rem;
     background-color: white;
     border-radius: 10px;
     box-shadow: 3px 0px 5px 4px rgb(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
+    transition: 0.3s;
 }
+
+
 
 .list-item img {
     width: 50px;
@@ -431,13 +436,14 @@ a{
 .list-item:hover{
     outline: solid 3px #92b6b1;
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 /* Stylesheet 4 */
 
 #design_wrapper{
     display: grid;
-    grid-template-rows: 60px 46vh auto auto;
+    grid-template-rows: 60px 55vh auto auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     'he he he'
@@ -570,4 +576,73 @@ a{
 #total p{
     display: flex;
     padding: 15px;
+}
+
+
+
+
+
+
+
+
+/* Mobil response |-----------------------------------------------------------------------------------|*/
+@media screen and (max-width: 600px) {
+    
+
+header #motor_logo{
+    display: block;
+    width: auto;
+    height: 40px;
+    padding-top: 10px;
+    position: relative;
+    right: -35px;
+}
+
+.logo {
+    display: none;
+}
+
+.navigator {
+    width: 400px;
+    justify-content: center;
+}   
+
+main{
+    display: flex;
+    background-image: url(/img/main_phone_landing_page.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    top: -8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
