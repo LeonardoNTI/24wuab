@@ -10,11 +10,11 @@ body::-webkit-scrollbar {
     line-height: 1.6;
 }
 
-#wrapper{
+#wrapper {
     display: grid;
     grid-template-columns: 1fr 40% 1fr;
     grid-template-rows: 60px 55vh 55vh auto auto;
-    grid-template-areas: 
+    grid-template-areas:
         "he he he"
         "mn mn mn"
         "sc1 sc1 sc1"
@@ -22,9 +22,9 @@ body::-webkit-scrollbar {
         "ft ft ft"
 }
 
-header{
+header {
     grid-area: he;
-    background-color:#5B618A;
+    background-color: #5B618A;
     position: relative;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -35,11 +35,11 @@ header{
     z-index: 3;
 }
 
-header #motor_logo{
+header #motor_logo {
     display: none;
 }
 
-.hamburger{
+.hamburger {
     position: relative;
     display: block;
     width: 35px;
@@ -51,7 +51,9 @@ header #motor_logo{
     margin-left: 10px;
 }
 
-.hamburger .bar, .hamburger:after, .hamburger:before{
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
     content: '';
     display: block;
     width: 110%;
@@ -61,19 +63,20 @@ header #motor_logo{
     transition: 0.4s;
 }
 
-.hamburger.is-active:after{
+.hamburger.is-active:after {
     transform: rotate(45deg) translate(-9px, -6px);
 }
 
-.hamburger.is-active:before{
-    transform: rotate(-45deg) translate(-6.5px, 3.5px);;
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-6.5px, 3.5px);
+    ;
 }
 
-.hamburger.is-active .bar{
+.hamburger.is-active .bar {
     opacity: 0;
 }
 
-.navigator{
+.navigator {
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -86,25 +89,25 @@ header #motor_logo{
     transition: 0.7s;
 }
 
-.navigator.is-active{
-    bottom:0;
+.navigator.is-active {
+    bottom: 0;
 }
 
-.navigator a{
-        display: block;
-        width: 100%;
-        max-width: 100px;
-        margin: 0 auto 16px;
-        text-align: center;
-        padding: 12px 16px;
-        background-color: #4b68648a;
+.navigator a {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: #4b68648a;
 
-        color: white;
-        text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
-.navigator a:hover{
-    background-color: #4f6d69 ;
+.navigator a:hover {
+    background-color: #4f6d69;
 }
 
 .logo {
@@ -113,7 +116,7 @@ header #motor_logo{
     margin-top: -15.5px;
 }
 
-main{
+main {
     grid-area: mn;
     position: relative;
     background-image: url(/img/kevin-bhagat-3cLpiv8h5so-unsplash\ \(1\).jpg);
@@ -127,7 +130,7 @@ main{
     display: none;
 }
 
-.search{
+.search {
     position: absolute;
     display: flex;
     align-items: center;
@@ -138,23 +141,23 @@ main{
     box-shadow: 0px 1px 7px 2px black;
     top: 52vh;
     left: 400px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.search:hover{
+.search:hover {
     cursor: text;
 }
 
-.search p{
+.search p {
     margin: 10px;
     color: rgba(0, 0, 0, 0.685);
 }
 
-.landing_car{
+.landing_car {
     height: 200px;
     width: auto;
     padding: 10px;
-}   
+}
 
 #car1 {
     height: 240px;
@@ -168,7 +171,7 @@ main{
     margin-top: 140px;
 }
 
-.car_section{
+.car_section {
     grid-area: sc1;
     background-color: #1E2019;
     display: flex;
@@ -199,11 +202,11 @@ main{
     display: none;
 }
 
-#about_us_container{
+#about_us_container {
     width: 40rem;
 }
 
-.about_section{
+.about_section {
     grid-area: sc2;
     background-color: #ffffff;
     display: flex;
@@ -221,7 +224,7 @@ main{
     border-radius: 6px;
 }
 
-footer{
+footer {
     grid-area: ft;
     height: auto;
     background-color: #92B6B1;
@@ -231,23 +234,23 @@ footer{
     font-family: 'Montserrat';
 }
 
-.footer-content{
+.footer-content {
     margin: 10px;
 }
 
-.social-media{
+.social-media {
     display: flex;
     padding-left: 0px;
     justify-content: space-between;
     width: 350px;
 }
 
-#follow-us{
+#follow-us {
     display: flex;
     justify-content: center;
 }
 
-#footer-content-links{
+#footer-content-links {
     padding-right: 100px;
 }
 
@@ -256,7 +259,7 @@ footer{
     margin-left: -15px;
 }
 
-#links{
+#links {
     display: flex;
     justify-content: space-between;
     width: 12rem;
@@ -264,7 +267,7 @@ footer{
 }
 
 #footer-content-links a {
-    text-decoration:none ;
+    text-decoration: none;
     color: black;
 
 }
@@ -274,41 +277,41 @@ footer{
     text-shadow: 1px 1px 2px black;
 }
 
-.social-media img{
+.social-media img {
     height: 30px;
     width: auto;
     margin-top: 25px;
 }
 
-/* Stylesheet 2 */ 
+/* Stylesheet 2 */
 
 
-#card_wrapper{
+#card_wrapper {
     display: grid;
     grid-template-columns: 20% 1fr 1fr 1fr;
     grid-template-rows: 60px 110vh auto;
-    grid-template-areas: 
-    'he he he he'
-    'as sc sc sc'
-    'ft ft ft ft'
+    grid-template-areas:
+        'he he he he'
+        'as sc sc sc'
+        'ft ft ft ft'
     ;
 }
 
 
-#card_section{
+#card_section {
     grid-area: sc;
     background-color: #1E2019;
     display: flex;
     align-items: center;
     flex-direction: column;
-    color:white;
+    color: white;
 }
 
-.pages{
+.pages {
     font-size: 19px;
 }
 
-.card_car{
+.card_car {
     height: fit-content;
     width: 300px;
     display: flex;
@@ -319,20 +322,20 @@ footer{
     color: black;
 }
 
-.card_car:hover{
+.card_car:hover {
     cursor: pointer;
     outline: solid 3px #92B6B1;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.car img{
+.car img {
     filter: brightness(150%);
 }
 
-.car h1{
+.car h1 {
     margin-bottom: 0px;
 }
 
@@ -349,14 +352,14 @@ a{
     margin: 30px;
 }
 
-.card_aside{
+.card_aside {
     grid-area: as;
     background-color: #484d69;
     padding-top: 30px;
     box-shadow: 3px 0px 5px 4px rgb(0, 0, 0, 0.4);
 }
 
-.filter{
+.filter {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -364,7 +367,7 @@ a{
     margin-left: 10px;
 }
 
-.filter a{
+.filter a {
     text-decoration: none;
     color: white;
     font-size: 30px;
@@ -376,32 +379,31 @@ a{
     border-left: solid 0px transparent;
 }
 
-.link:hover{
+.link:hover {
     border-left: solid 10px #92B6B1;
 }
 
-/* Stylesheet 3 */ 
+/* Stylesheet 3 */
 
-#services_wrapper{
+#services_wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 60px 100vh auto;
-    grid-template-areas: 
-    'he he'
-    'sc sc'
-    'ft ft'
+    grid-template-areas:
+        'he he'
+        'sc sc'
+        'ft ft'
 }
 
-#services_section{
+#services_section {
     grid-area: sc;
     background-color: #ffffff;
     display: flex;
-    align-items: center;
     padding: 100px;
     justify-content: center;
 }
 
-.services_container{
+.services_container {
     width: 500rem;
     height: 30rem;
     display: flex;
@@ -413,7 +415,7 @@ a{
     padding-right: 40px;
 }
 
-.list-item{
+.list-item {
     height: 100px;
     width: 28rem;
     background-color: white;
@@ -424,22 +426,20 @@ a{
     transition: 0.3s;
 }
 
-
-
 .list-item img {
     width: 50px;
     height: auto;
     padding-left: 15px;
 }
 
-.list-item h2{
+.list-item h2 {
     padding-left: 20px;
     border-left: solid 2px #92b6b1;
     padding: 17px;
     margin-left: 20px;
 }
 
-.list-item:hover{
+.list-item:hover {
     outline: solid 3px #92b6b1;
     cursor: pointer;
     transform: scale(1.05);
@@ -447,24 +447,28 @@ a{
 
 /* Stylesheet 4 */
 
-#design_wrapper{
+#design_wrapper {
     display: grid;
     grid-template-rows: 60px 55vh auto auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    'he he he'
-    'sc sc sc'
-    'sc1 sc1 sc1'
-    'ft ft ft'
+    grid-template-areas:
+        'he he he'
+        'sc sc sc'
+        'sc1 sc1 sc1'
+        'ft ft ft'
 }
 
-.design_section{
+.iphone_design{
+    display: none;
+}
+
+.design_section {
     grid-area: sc;
     display: flex;
     background-color: #1E2019;
 }
 
-.design_section img{
+.design_section img {
     height: 20rem;
     width: auto;
     display: flex;
@@ -476,7 +480,7 @@ a{
     color: white;
 }
 
-#car_info_top{
+#car_info_top {
     display: flex;
     flex-direction: row;
     height: fit-content;
@@ -485,7 +489,7 @@ a{
 
 }
 
-#upgrades{
+#upgrades {
     grid-area: sc1;
     background-color: #1E2019;
     display: flex;
@@ -496,14 +500,14 @@ a{
     padding: 40px;
 }
 
-.design_list{
+.design_list {
     height: 300px;
     width: 250px;
     border-radius: 10px;
     background-color: #57706d;
 }
 
-#rims{
+#rims {
     height: 400px;
     width: 450px;
     display: flex;
@@ -512,19 +516,19 @@ a{
     gap: 60px;
 }
 
-#rims p{
+#rims p {
     padding: 25px;
     cursor: pointer;
 }
 
-#rims img{
+#rims img {
     height: 300px;
     width: auto;
     border-radius: 10px;
     border: solid 3px #92B6B1;
 }
 
-#spoiler{
+#spoiler {
     height: 350px;
     width: 600px;
     display: flex;
@@ -533,19 +537,19 @@ a{
     gap: 40px;
 }
 
-#spoiler p{
+#spoiler p {
     padding: 25px;
     cursor: pointer;
 }
 
-#spoiler img{
+#spoiler img {
     height: 230px;
     width: auto;
     border-radius: 10px;
     border: solid 3px #92B6B1;
 }
 
-#interior{
+#interior {
     height: 350px;
     width: 600px;
     display: flex;
@@ -554,19 +558,19 @@ a{
     gap: 40px;
 }
 
-#interior p{
+#interior p {
     padding: 25px;
     cursor: pointer;
 }
 
-#interior img{
+#interior img {
     height: 250px;
     width: auto;
     border-radius: 10px;
     border: solid 3px #92B6B1;
 }
 
-#total{
+#total {
     height: 400px;
     width: 400px;
     display: flex;
@@ -575,11 +579,11 @@ a{
     align-items: center;
 }
 
-#total h2{
+#total h2 {
     cursor: pointer;
 }
 
-#total p{
+#total p {
     display: flex;
     padding: 15px;
 }
@@ -595,187 +599,257 @@ a{
 @media screen and (max-width: 600px) {
 
 
-#wrapper{
-    display: grid;
-    grid-template-columns: 1fr 40% 1fr;
-    grid-template-rows: 60px auto 55vh auto auto;
-    grid-template-areas: 
-        "he he he"
-        "mn mn mn"
-        "sc1 sc1 sc1"
-        "sc2 sc2 sc2"
-        "ft ft ft"
-}    
+    #wrapper {
+        display: grid;
+        grid-template-columns: 1fr 40% 1fr;
+        grid-template-rows: 60px auto 55vh auto auto;
+        grid-template-areas:
+            "he he he"
+            "mn mn mn"
+            "sc1 sc1 sc1"
+            "sc2 sc2 sc2"
+            "ft ft ft"
+    }
 
-header #motor_logo{
-    display: block;
-    width: auto;
-    height: 40px;
-    padding-top: 10px;
-    position: relative;
-    right: -35px;
-}
+    header #motor_logo {
+        display: block;
+        width: auto;
+        height: 40px;
+        padding-top: 10px;
+        position: relative;
+        right: -35px;
+    }
 
-.logo {
-    display: none;
-}
+    .logo {
+        display: none;
+    }
 
-.navigator {
-    width: 400px;
-    justify-content: center;
-}   
+    .navigator {
+        width: 400px;
+        justify-content: center;
+    }
 
-main{
-    display: flex;
-    background-image: url(/img/aaron-burden-U4w7y0lowL8-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 83vh;
-    justify-content: center;
-}
+    main {
+        display: flex;
+        background-image: url(/img/aaron-burden-U4w7y0lowL8-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 83vh;
+        justify-content: center;
+    }
 
-.search {
-    display: none;
-}
+    .search {
+        display: none;
+    }
 
-.title {
-    display: block;
-    color: white;
-    font-size: 30px;
-    position: center;
-    margin-top: 55vh;
-    text-shadow: 0px 4px 2px black;
-}
+    .title {
+        display: block;
+        color: white;
+        font-size: 30px;
+        position: center;
+        margin-top: 55vh;
+        text-shadow: 0px 4px 2px black;
+    }
 
-#car1 {
-    display: block;
-    transform: scale(0.8);
-}
+    #car1 {
+        display: block;
+        transform: scale(0.8);
+    }
 
-.arrows {
-    display: none;
-}
+    .arrows {
+        display: none;
+    }
 
-.landing_car {
-    display: none;
-}
+    .landing_car {
+        display: none;
+    }
 
-.more_button {
-    bottom: -40vh;
-    z-index: 10;
-}
+    .more_button {
+        bottom: -40vh;
+        z-index: 10;
+    }
 
-.about_section img {
-    display: none;
-}
+    .about_section img {
+        display: none;
+    }
 
-.about_section {
-    display: flex;
-    background-color: #1E2019;
-    color: white;
-    padding: 10px;
-}
+    .about_section {
+        display: flex;
+        background-color: #1E2019;
+        color: white;
+        padding: 10px;
+    }
 
-.about_section h2 {
-    text-align: center;
-}
+    .about_section h2 {
+        text-align: center;
+    }
 
-.about_us_desktop {
-    display: none;
-}
+    .about_us_desktop {
+        display: none;
+    }
 
-.footer-content {
-    display: block;
-}
+    .footer-content {
+        display: block;
+    }
 
-#footer-content-links {
-    display: none;
-}
+    #footer-content-links {
+        display: none;
+    }
 
-#follow-us {
-    margin-bottom: 0;
-}
+    #follow-us {
+        margin-bottom: 0;
+    }
 
-footer {
-    display: flex;
-    flex-direction: column;
-}
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
 
-.social-media img {
-    height: 20px;
-}
+    .social-media img {
+        height: 20px;
+    }
 
-.social-media {
-    display: flex;
-}
+    .social-media {
+        display: flex;
+    }
 
-.footer-content {
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-
-/* Card page |--------------------------------------------------------------------------------------| */
+    .footer-content {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
 
 
-#card_wrapper{
-    display: grid;
-    grid-template-columns: 40vw 1fr 1fr 1fr;
-    grid-template-rows: 60px 110vh auto;
-    grid-template-areas: 
-    'he he he he'
-    'as sc sc sc'
-    'ft ft ft ft'
-    ;
-}
+    /* Card page |--------------------------------------------------------------------------------------| */
 
 
-
-.card_car {
-    display: flex;
-    height: 180px;
-    width: 180px;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card_car p {
-    display: none;
-}
-
-.card_car h1 {
-    text-align: center;
-}
-
-.card_car img {
-    height: 110px;
-}
-
-#card_d {
-    display: none;
-}
-
-#card1 img, #card2 img, #card3 img {
-    position: center;
-}
-
-#desktop_link {
-    display: none;
-}
-
-
-/* Service page phone |----------------------------------------------------------------------------| */
+    #card_wrapper {
+        display: grid;
+        grid-template-columns: 40vw 1fr 1fr 1fr;
+        grid-template-rows: 60px 110vh auto;
+        grid-template-areas:
+            'he he he he'
+            'as sc sc sc'
+            'ft ft ft ft'
+        ;
+    }
 
 
 
+    .card_car {
+        display: flex;
+        height: 180px;
+        width: 180px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_car p {
+        display: none;
+    }
+
+    .card_car h1 {
+        text-align: center;
+    }
+
+    .card_car img {
+        height: 110px;
+    }
+
+    #card_d {
+        display: none;
+    }
+
+    #card1 img,
+    #card2 img,
+    #card3 img {
+        position: center;
+    }
+
+    #desktop_link {
+        display: none;
+    }
 
 
+    /* Service page phone |----------------------------------------------------------------------------| */
+
+    #services_wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 60px 105vh auto;
+        grid-template-areas:
+            'he he'
+            'sc sc'
+            'ft ft'
+    }
+
+    .list-item {
+        width: 20rem;
+        height: 4rem;
+    }
+
+    #services_section {
+        padding: 0px;
+        padding-top: 2rem;
+    }
 
 
+    /* Design page phone |------------------------------------------------------------------------------|*/
 
+    #design_wrapper {
+        display: grid;
+        grid-template-rows: 60px auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            'he he he'
+            'sc sc sc'
+            'sc1 sc1 sc1'
+            'ft ft ft'
+    }
 
+    #car_info p {
+        display: none;
+    }
 
+    #car_info_top img {
+        height: 170px;
+        width: auto;
+    }
+
+    #rims, #spoiler, #interior, #total{
+        display: flex;
+        height: 300px;
+        width: 350px;
+        flex-direction: column;
+        padding: 0px;
+        gap: 0px;
+    }
+
+    #rims p, #spoiler p, #interior p, #total p {
+        padding: 0px;
+    }
+
+    .iphone_design{
+        display: block;
+        margin-bottom: 0px;
+    }
+
+    .design_list img {
+        display: none;
+    }
+
+    .design_list h4 {
+        font-size: 30px;
+    }
+
+    .alternatives {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #total h1{
+        text-align: center;
+    }
 
 
 
