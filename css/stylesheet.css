@@ -123,6 +123,10 @@ main{
     z-index: 1;
 }
 
+.title {
+    display: none;
+}
+
 .search{
     position: absolute;
     display: flex;
@@ -189,6 +193,10 @@ main{
 
 .more_button:hover {
     background-color: #57706d;
+}
+
+.about_us_iphone {
+    display: none;
 }
 
 #about_us_container{
@@ -273,8 +281,6 @@ footer{
 }
 
 /* Stylesheet 2 */ 
-
-
 
 
 #card_wrapper{
@@ -587,7 +593,19 @@ a{
 
 /* Mobil response |-----------------------------------------------------------------------------------|*/
 @media screen and (max-width: 600px) {
-    
+
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr;
+    grid-template-rows: 60px auto 55vh auto auto;
+    grid-template-areas: 
+        "he he he"
+        "mn mn mn"
+        "sc1 sc1 sc1"
+        "sc2 sc2 sc2"
+        "ft ft ft"
+}    
 
 header #motor_logo{
     display: block;
@@ -609,19 +627,145 @@ header #motor_logo{
 
 main{
     display: flex;
-    background-image: url(/img/main_phone_landing_page.jpg);
+    background-image: url(/img/aaron-burden-U4w7y0lowL8-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 40rem;
-    top: -8rem;
+    background-size: contain;
+    height: 83vh;
+    justify-content: center;
+}
+
+.search {
+    display: none;
+}
+
+.title {
+    display: block;
+    color: white;
+    font-size: 30px;
+    position: center;
+    margin-top: 55vh;
+    text-shadow: 0px 4px 2px black;
+}
+
+#car1 {
+    display: block;
+    transform: scale(0.8);
+}
+
+.arrows {
+    display: none;
+}
+
+.landing_car {
+    display: none;
+}
+
+.more_button {
+    bottom: -40vh;
+    z-index: 10;
+}
+
+.about_section img {
+    display: none;
+}
+
+.about_section {
+    display: flex;
+    background-color: #1E2019;
+    color: white;
+    padding: 10px;
+}
+
+.about_section h2 {
+    text-align: center;
+}
+
+.about_us_desktop {
+    display: none;
+}
+
+.footer-content {
+    display: block;
+}
+
+#footer-content-links {
+    display: none;
+}
+
+#follow-us {
+    margin-bottom: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media img {
+    height: 20px;
+}
+
+.social-media {
+    display: flex;
+}
+
+.footer-content {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+/* Card page |--------------------------------------------------------------------------------------| */
+
+
+#card_wrapper{
+    display: grid;
+    grid-template-columns: 40vw 1fr 1fr 1fr;
+    grid-template-rows: 60px 110vh auto;
+    grid-template-areas: 
+    'he he he he'
+    'as sc sc sc'
+    'ft ft ft ft'
+    ;
 }
 
 
 
+.card_car {
+    display: flex;
+    height: 180px;
+    width: 180px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_car p {
+    display: none;
+}
+
+.card_car h1 {
+    text-align: center;
+}
+
+.card_car img {
+    height: 110px;
+}
+
+#card_d {
+    display: none;
+}
+
+#card1 img, #card2 img, #card3 img {
+    position: center;
+}
+
+#desktop_link {
+    display: none;
+}
 
 
-
+/* Service page phone |----------------------------------------------------------------------------| */
 
 
 
